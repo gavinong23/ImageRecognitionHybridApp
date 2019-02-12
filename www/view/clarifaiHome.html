@@ -1,0 +1,59 @@
+<ion-view>
+
+  <ion-header-bar class="bar-positive">
+    <h1 class="title">Clarifai Home</h1>
+  </ion-header-bar>
+
+  <ion-content ng-controller="clarifaiHomeCtrl">
+    <div class="mainContainer">
+
+
+      <div class="imageContainer">
+        <div class="btnContainer" ng-init="library = 0;camera = 1">
+          <button class="button button-stable circleBtn" ng-click="onClickCamera(camera)">
+             <i class="icon ion-camera"></i>
+             <h6>Take Photo</h6>
+          </button>
+
+          <button class="button button-stable circleBtn" ng-click="onClickCamera(library)">
+             <i class="icon ion-image"></i>
+             <h6>Choose From Library</h6>
+          </button>
+        </div>
+
+          <!-- <img ng-src="{{choosenImg}}" class="imageDisplay"> -->
+                <!-- <img src="img/ionic.png" class="imageDisplay" > -->
+      </div>
+
+
+
+      <!-- <div class="resultTable" ng-if="data != null">
+
+        <div class="row">
+
+          <div class="col tableTitle border-left">Detected Object</div>
+          <div class="col tableTitle border-right">Probability</div>
+
+        </div>
+
+        <div class="row" ng-repeat="d in data track by $index">
+
+          <div class="col tableContent">{{d.name}}</div>
+
+          <div class="col tableContent">{{d.value}}</div>
+
+        </div>
+
+      </div> -->
+<!--
+      <p ng-repeat="d in data track by $index">
+          {{d.name}}
+
+          {{d.value}}
+      </p> -->
+
+    </div>
+
+  </ion-content>
+
+</ion-view>
